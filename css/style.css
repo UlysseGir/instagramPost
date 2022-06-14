@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.post{
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.4);
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.post div {
+    height: 100px;
+    width: 100%;
+}
+
+.postFoot{
+    display: flex;
+}
+
+.post i{
+    font-size: 30px;
+    margin: 5px;
+    
+}
+
+.postFoot i:last-of-type{
+    text-align: end;
+    width: 100%;
+}
