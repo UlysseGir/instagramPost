@@ -1,4 +1,17 @@
 const app = document.getElementById("app")
+
+let dataPost = {
+    isBooked: false,
+    isSponsored: true,
+    isLiked: false,
+    isFollow: false,
+    pseudo: "Lorem Ipsum",
+    avatarURL: "",
+    imageURL: "",
+    likes: 300,
+}
+
+
 const post = document.createElement("div");
 post.classList.add("post")
 const postHead = document.createElement("div");
@@ -25,7 +38,7 @@ iBooked.classList.add("fa-bookmark")
 const profilImage = document.createElement("img");
 profilImage.src = "https://random.imagecdn.app/50/50";
 const profilName = document.createElement("p");
-profilName.textContent = "Lorem Ipsum";
+profilName.textContent = dataPost.pseudo; //
 const sponsore = document.createElement("span");
 sponsore.textContent = "Sponsored";
 const headLeft = document.createElement("div");
@@ -57,13 +70,9 @@ headRight.appendChild(follow);
 headRight.appendChild(iMenu);
 
 
-
-let postStat = {
-    isBooked: true,
-    pseudo: "test",
-    isSponsored: false,
-    avatarURL: "",
-    imageURL: "",
-    isLiked: true,
-    likes: 300,
-}
+iLike.addEventListener("click", ()=>{
+    dataPost.isLiked = !dataPost.isLiked
+    iLike.classList.toggle("fas");
+    iLike.classList.toggle("far");
+    iLike.style.color = dataPost.isLiked ? "red" : "black";
+})
