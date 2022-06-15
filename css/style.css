@@ -30,10 +30,13 @@ body{
 
 .headLeft p {
     margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .headLeft span{
     display: block;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .postHead img {
@@ -41,10 +44,6 @@ body{
     height: 50px;
     margin-left: 15px;
     border-radius: 500px;
-}
-
-.headLeft{
-    display: flex;
 }
 
 .headRight{
